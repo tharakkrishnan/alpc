@@ -1,0 +1,149 @@
+Running encoder tests:
+***Running Encoder Test for value 0***
+user input 16 bit signed:	          0
+input in 14 bit signed:                0
+intermediate: 2000
+final: 4000
+14 bit signed encoded into hex string:  4000
+-----------------------------------------
+***Running Encoder Test for value -8192***
+user input 16 bit signed:	          -8192
+input in 14 bit signed:                2000
+intermediate: 0
+final: 0
+14 bit signed encoded into hex string:  0
+-----------------------------------------
+***Running Encoder Test for value 8191***
+user input 16 bit signed:	          8191
+input in 14 bit signed:                1fff
+intermediate: 3fff
+final: 7f7f
+14 bit signed encoded into hex string:  7f7f
+-----------------------------------------
+***Running Encoder Test for value 2048***
+user input 16 bit signed:	          2048
+input in 14 bit signed:                800
+intermediate: 2800
+final: 5000
+14 bit signed encoded into hex string:  5000
+-----------------------------------------
+***Running Encoder Test for value -4096***
+user input 16 bit signed:	          -4096
+input in 14 bit signed:                3000
+intermediate: 1000
+final: 2000
+14 bit signed encoded into hex string:  2000
+-----------------------------------------
+***Running Encoder Test for value 6111***
+user input 16 bit signed:	          6111
+input in 14 bit signed:                17df
+intermediate: 37df
+final: 6f5f
+14 bit signed encoded into hex string:  6f5f
+-----------------------------------------
+***Running Encoder Test for value 340***
+user input 16 bit signed:	          340
+input in 14 bit signed:                154
+intermediate: 2154
+final: 4254
+14 bit signed encoded into hex string:  4254
+-----------------------------------------
+***Running Encoder Test for value -2628***
+user input 16 bit signed:	          -2628
+input in 14 bit signed:                35bc
+intermediate: 15bc
+final: 2b3c
+14 bit signed encoded into hex string:  2b3c
+-----------------------------------------
+***Running Encoder Test for value -255***
+user input 16 bit signed:	          -255
+input in 14 bit signed:                3f01
+intermediate: 1f01
+final: 3e01
+14 bit signed encoded into hex string:  3e01
+-----------------------------------------
+***Running Encoder Test for value 7550***
+user input 16 bit signed:	          7550
+input in 14 bit signed:                1d7e
+intermediate: 3d7e
+final: 7a7e
+14 bit signed encoded into hex string:  7a7e
+-----------------------------------------
+Running decoder tests
+***Running Decoder Test for value 4000***
+14 bit signed encoded into hex string:  4000
+intermediate: 16384
+final: 0
+hex string decoded back into 14 bit:    0
+output in 16 bit signed decimal:       0
+------------------------------------------
+***Running Decoder Test for value 0000***
+14 bit signed encoded into hex string:  0000
+intermediate: 0
+final: 8192
+hex string decoded back into 14 bit:    8192
+output in 16 bit signed decimal:       -8192
+------------------------------------------
+***Running Decoder Test for value 7f7f***
+14 bit signed encoded into hex string:  7f7f
+intermediate: 32639
+final: 8191
+hex string decoded back into 14 bit:    8191
+output in 16 bit signed decimal:       8191
+------------------------------------------
+***Running Decoder Test for value 5000***
+14 bit signed encoded into hex string:  5000
+intermediate: 20480
+final: 2048
+hex string decoded back into 14 bit:    2048
+output in 16 bit signed decimal:       2048
+------------------------------------------
+***Running Decoder Test for value 0a05***
+14 bit signed encoded into hex string:  0a05
+intermediate: 2565
+final: 9477
+hex string decoded back into 14 bit:    9477
+output in 16 bit signed decimal:       -6907
+------------------------------------------
+***Running Decoder Test for value 5500***
+14 bit signed encoded into hex string:  5500
+intermediate: 21760
+final: 2688
+hex string decoded back into 14 bit:    2688
+output in 16 bit signed decimal:       2688
+------------------------------------------
+***Running Decoder Test for value 0A0A***
+14 bit signed encoded into hex string:  0A0A
+intermediate: 2570
+final: 9482
+hex string decoded back into 14 bit:    9482
+output in 16 bit signed decimal:       -6902
+------------------------------------------
+***Running Decoder Test for value 0029***
+14 bit signed encoded into hex string:  0029
+intermediate: 41
+final: 8233
+hex string decoded back into 14 bit:    8233
+output in 16 bit signed decimal:       -8151
+------------------------------------------
+***Running Decoder Test for value 3F0F***
+14 bit signed encoded into hex string:  3F0F
+intermediate: 16143
+final: 16271
+hex string decoded back into 14 bit:    16271
+output in 16 bit signed decimal:       -113
+------------------------------------------
+***Running Decoder Test for value 4400***
+14 bit signed encoded into hex string:  4400
+intermediate: 17408
+final: 512
+hex string decoded back into 14 bit:    512
+output in 16 bit signed decimal:       512
+------------------------------------------
+***Running Decoder Test for value 5E7F***
+14 bit signed encoded into hex string:  5E7F
+intermediate: 24191
+final: 3967
+hex string decoded back into 14 bit:    3967
+output in 16 bit signed decimal:       3967
+------------------------------------------
